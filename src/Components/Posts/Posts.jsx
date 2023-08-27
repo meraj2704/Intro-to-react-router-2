@@ -7,6 +7,7 @@ const Posts = () => {
     return (
         <div>
             {
+                // by the maping 'posts' we calling single post for display post
                 posts.map(post => <Post
                 key={post.id}
                 post={post}

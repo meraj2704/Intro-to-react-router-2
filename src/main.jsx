@@ -16,8 +16,10 @@ import ProfileDetails from './Components/PropfileDetails/ProfileDetails.jsx';
 import Posts from './Components/Posts/Posts.jsx';
 const router = createBrowserRouter([
   {
+    // in this function we add path for all components
     path: "/",
     element: <Home></Home>,
+    // here we declare children page of home
     children: [
       {
         path: '/about',
