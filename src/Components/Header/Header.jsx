@@ -8,6 +8,7 @@ const Header = () => {
             <Link className='no-underline mr-4 hover:text-purple-700' to="/about">about</Link>
             <Link className='no-underline mr-4 hover:text-purple-700' to="/contact">Contact</Link>
             <Link className='no-underline mr-4 hover:text-purple-700' to= "/friends">Friends</Link>
+            <Link className='no-underline mr-4 hover:text-purple-700' to= "/posts">Posts</Link>
         </nav>
     );-700
 };
