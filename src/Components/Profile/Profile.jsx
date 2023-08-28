@@ -1,9 +1,13 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigate } from 'react-router-dom';
 
 const Profile = () => {
     const proDetails = useLoaderData();
     // console.log(proDetails)
+    const back = useNavigate();
+    const goBack = ()=>{
+        back(-1);
+    }
 
     const {name, id, email, phone} = proDetails
     const {city, street} = proDetails.address
@@ -16,7 +20,9 @@ const Profile = () => {
             <p>Phone  : {phone}</p>
             <p>City   : {city}</p>
             <p>Street : {street}</p>
+            <button onClick={goBack}>Go Back</button>
             </div>
+
         </div>
     );
 };
